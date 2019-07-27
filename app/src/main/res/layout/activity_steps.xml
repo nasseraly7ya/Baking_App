@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepsActivity">
+
+    <!--<ScrollView-->
+
+
+    <!--android:layout_width="match_parent"-->
+
+
+    <!--android:layout_height="587dp"-->
+
+
+    <!--android:id="@+id/scroll"-->
+
+
+    <!--android:layout_marginTop="8dp"-->
+
+
+    <!--android:layout_marginBottom="128dp"-->
+
+
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+
+
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+
+
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+
+
+    <!--app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/scroll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingTop="8dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/btnNext"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+
+        <!--tools:layout_editor_absoluteX="0dp">-->
+
+        <FrameLayout
+            android:id="@+id/fragmentt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/btnNext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    <!--</ScrollView>-->
+
+    <!--</ScrollView>-->
+
+
+    <Button
+        android:id="@+id/btnPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentt" />
+
+</android.support.constraint.ConstraintLayout>
